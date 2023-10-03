@@ -5,11 +5,12 @@ import { Loader } from "../../components/Loader/Loader";
 import { useSelector, useDispatch } from "react-redux";
 import { GoalCard } from "../../components/GoalCard/GoalCard";
 import { AddGoalModal } from "../../components/AddGoalModal/AddGoalModal";
+import { stateType } from "../../redux/reducer";
 
 export const Goal = (): JSX.Element => {
   const [showAddGoalModal, setShowAddGoalModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const goals = useSelector((state) => state.goals);
+  const goals = useSelector((state: stateType) => state.goals);
   const dispatch = useDispatch();
   useEffect(() => {
     (async () => {

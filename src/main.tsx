@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import App from "./App";
 import "./index.scss";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Summary } from "./pages/Summary/Summary.tsx";
-import { Exercise } from "./pages/Exercise/Exercise.tsx";
+import { Summary } from "./pages/Summary/Summary";
+import { Exercise } from "./pages/Exercise/Exercise";
 import { Provider } from "react-redux";
-import { store } from "./redux/store.ts";
-import { Food } from "./pages/Food/Food.tsx";
-import { Goal } from "./pages/Goal/Goal.tsx";
+import { store } from "./redux/store";
+import { Food } from "./pages/Food/Food";
+import { Goal } from "./pages/Goal/Goal";
 
 const router = createBrowserRouter([
   {

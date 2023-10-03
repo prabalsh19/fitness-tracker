@@ -4,11 +4,13 @@ import "./Summary.scss";
 import axios from "axios";
 import { Loader } from "../../components/Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
+import { stateType } from "../../redux/reducer";
 
 export const Summary = (): JSX.Element => {
   const [isLoading, setIsLoading] = useState(false);
   const dispatch = useDispatch();
-  const state = useSelector((state) => state);
+
+  const state = useSelector((state: stateType) => state);
   useEffect(() => {
     (async () => {
       try {

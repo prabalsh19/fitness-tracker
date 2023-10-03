@@ -5,11 +5,13 @@ import "./Food.scss";
 import { FoodCard } from "../../components/FoodCard/FoodCard";
 import { Loader } from "../../components/Loader/Loader";
 import { AddFoodModal } from "../../components/AddFoodModal/AddFoodModal";
+import { stateType } from "../../redux/reducer";
 
 export const Food = (): JSX.Element => {
   const [showAddFoodModal, setShowAddFoodModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const food = useSelector((state) => state.food);
+
+  const food = useSelector((state: stateType) => state.food);
   const dispatch = useDispatch();
   useEffect(() => {
     (async () => {
@@ -25,7 +27,14 @@ export const Food = (): JSX.Element => {
       }
     })();
   }, []);
-
+  type Food = {
+    _id: number;
+    foodName: string;
+    calories: number;
+    protein: number;
+    carbohydrates: number;
+    fat: number;
+  };
   return (
     <>
       {isLoading ? (

@@ -1,3 +1,27 @@
+export type stateType = {
+  exercises: {
+    _id: number;
+    duration: number;
+    exerciseName: string;
+    caloriesBurned: number;
+  }[];
+  food: {
+    _id: number;
+    foodName: string;
+    calories: number;
+    protein: number;
+    carbohydrates: number;
+    fat: number;
+  }[];
+  goals: {
+    _id: number;
+    goalName: string;
+    description: string;
+    targetDate: Date;
+    targetCalories: number;
+    status: "In Progress" | "Achieved" | "Abandoned";
+  }[];
+};
 const initalState = {
   exercises: [],
   food: [],

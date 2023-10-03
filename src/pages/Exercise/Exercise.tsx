@@ -5,9 +5,10 @@ import { ExerciseCard } from "../../components/ExerciseCard/ExerciseCard";
 import "./Exercise.scss";
 import { Loader } from "../../components/Loader/Loader";
 import { AddExerciseModal } from "../../components/AddExerciseModal/AddExerciseModal";
+import { stateType } from "../../redux/reducer";
 
 export const Exercise = (): JSX.Element => {
-  const exercises = useSelector((state) => state.exercises);
+  const exercises = useSelector((state: stateType) => state.exercises);
   const [isLoading, setIsLoading] = useState(false);
   const [showAddExerciseModal, setShowAddExerciseModal] = useState(false);
   const dispatch = useDispatch();
