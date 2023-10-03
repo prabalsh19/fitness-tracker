@@ -148,8 +148,5 @@ The Fitness Tracker is a web application designed to help users track their fitn
 
 Contributions are welcome! Please feel free to open issues or pull requests for any improvements or bug fixes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
