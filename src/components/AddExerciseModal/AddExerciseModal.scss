@@ -1,0 +1,31 @@
+@import "../../index.scss";
+
+.addExerciseModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    min-width: 25rem;
+
+    input {
+      width: 100%;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+    button {
+      cursor: pointer;
+      background-color: $secondary-color;
+      border: none;
+      color: $primary-color;
+      padding: 10px;
+    }
+  }
+}

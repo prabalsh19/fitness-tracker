@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+.foodCard {
+  box-shadow: $box-shadow;
+  padding: 1rem;
+  min-width: 25rem;
+  background-color: $secondary-color;
+  color: $primary-color;
+  border-radius: 1rem;
+  display: flex;
+
+  &__details {
+    flex: 1;
+  }
+  &__removeBtn {
+    height: fit-content;
+    align-self: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+  }
+}

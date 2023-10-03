@@ -1,0 +1,18 @@
+@import "../../index.scss";
+.food {
+  margin-top: 3rem;
+  &__addBtn {
+    padding: 10px 20px;
+    border-radius: 2rem;
+    border: 0.75px solid $secondary-color;
+    color: $secondary-color;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
